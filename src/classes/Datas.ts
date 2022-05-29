@@ -1,6 +1,6 @@
 import { HasHtmlFormat } from '../interfaces/HasHtmlFormat';
 
-class Datas implements HasHtmlFormat {
+export class Datas implements HasHtmlFormat {
 
   constructor(
     private documentType: string,
@@ -14,7 +14,7 @@ class Datas implements HasHtmlFormat {
     private price: number,
     private quantity: number,
     private tva: number,
-    private date: number,
+    private date: Date,
   ) {
 
   }
@@ -31,7 +31,7 @@ class Datas implements HasHtmlFormat {
         </div>
       </div>
 
-    <div class="row pb-5 p-5">
+      <div class="row pb-5 p-5">
         <div class="col-sm-6 text-left">
             <p class="font-weight-bold">Entreprise de Toto</p>
             <p class="mb-1">22 boulevard Moe Szyslak</p>
@@ -47,37 +47,37 @@ class Datas implements HasHtmlFormat {
             <p>xxxxxxxxxxxxxxx</p>
             <p>xxxxxxxxxxxxxxx</p>
         </div>
-    </div>
+      </div>
 
-<div class="row p-5">
-    <div class="col-md-12">
-        <table class="table">
-        <thead>
-            <tr>
-            <th class="border-0 text-uppercase small font-weight-bold">Produit/Service</th>
-            <th class="border-0 text-uppercase small font-weight-bold">Prix unitaire HT</th>
-            <th class="border-0 text-uppercase small font-weight-bold">Quantité</th>
-            <th class="border-0 text-uppercase small font-weight-bold">Total HT</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <td>xxxxxxxxxxxxxxx</td>
-            <td>xxxxxxxxxxxxxxx € HT</td>
-            <td>xxxxxxxxxxxxxxx</td>
-            <td>xxxxxxxxxxxxxxx € HT</td>
-            </tr>
-        </tbody>
-        </table>
-    </div>
-</div>
+      <div class="row p-5">
+        <div class="col-md-12">
+            <table class="table">
+            <thead>
+                <tr>
+                  <th class="border-0 text-uppercase small font-weight-bold">Produit/Service</th>
+                  <th class="border-0 text-uppercase small font-weight-bold">Prix unitaire HT</th>
+                  <th class="border-0 text-uppercase small font-weight-bold">Quantité</th>
+                  <th class="border-0 text-uppercase small font-weight-bold">Total HT</th>
+                </tr>
+            </thead>
+              <tbody>
+                <tr>
+                  <td>xxxxxxxxxxxxxxx</td>
+                  <td>xxxxxxxxxxxxxxx € HT</td>
+                  <td>xxxxxxxxxxxxxxx</td>
+                  <td>xxxxxxxxxxxxxxx € HT</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
 
-<div class="d-flex flex-row-reverse bg-light p-4">
-    <div class="py-3 px-5">
-        <div class="mb-2">TOTAL TTC</div>
-        <div class="h2 font-weight-light">xxxxxxxxxxxxxxx €</div>
-    </div>
-</div>
-        `
+      <div class="d-flex flex-row-reverse bg-light p-4">
+        <div class="py-3 px-5">
+          <div class="mb-2">TOTAL TTC</div>
+          <div class="h2 font-weight-light">xxxxxxxxxxxxxxx €</div>
+        </div>
+      </div>
+    `
   }
 }

@@ -1,4 +1,4 @@
-class Datas {
+export class Datas {
     constructor(documentType, firstName, lastName, address, country, town, zip, product, price, quantity, tva, date) {
         this.documentType = documentType;
         this.firstName = firstName;
@@ -25,7 +25,7 @@ class Datas {
         </div>
       </div>
 
-    <div class="row pb-5 p-5">
+      <div class="row pb-5 p-5">
         <div class="col-sm-6 text-left">
             <p class="font-weight-bold">Entreprise de Toto</p>
             <p class="mb-1">22 boulevard Moe Szyslak</p>
@@ -41,38 +41,37 @@ class Datas {
             <p>xxxxxxxxxxxxxxx</p>
             <p>xxxxxxxxxxxxxxx</p>
         </div>
-    </div>
+      </div>
 
-<div class="row p-5">
-    <div class="col-md-12">
-        <table class="table">
-        <thead>
-            <tr>
-            <th class="border-0 text-uppercase small font-weight-bold">Produit/Service</th>
-            <th class="border-0 text-uppercase small font-weight-bold">Prix unitaire HT</th>
-            <th class="border-0 text-uppercase small font-weight-bold">Quantité</th>
-            <th class="border-0 text-uppercase small font-weight-bold">Total HT</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <td>xxxxxxxxxxxxxxx</td>
-            <td>xxxxxxxxxxxxxxx € HT</td>
-            <td>xxxxxxxxxxxxxxx</td>
-            <td>xxxxxxxxxxxxxxx € HT</td>
-            </tr>
-        </tbody>
-        </table>
-    </div>
-</div>
+      <div class="row p-5">
+        <div class="col-md-12">
+            <table class="table">
+            <thead>
+                <tr>
+                  <th class="border-0 text-uppercase small font-weight-bold">Produit/Service</th>
+                  <th class="border-0 text-uppercase small font-weight-bold">Prix unitaire HT</th>
+                  <th class="border-0 text-uppercase small font-weight-bold">Quantité</th>
+                  <th class="border-0 text-uppercase small font-weight-bold">Total HT</th>
+                </tr>
+            </thead>
+              <tbody>
+                <tr>
+                  <td>xxxxxxxxxxxxxxx</td>
+                  <td>xxxxxxxxxxxxxxx € HT</td>
+                  <td>xxxxxxxxxxxxxxx</td>
+                  <td>xxxxxxxxxxxxxxx € HT</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
 
-<div class="d-flex flex-row-reverse bg-light p-4">
-    <div class="py-3 px-5">
-        <div class="mb-2">TOTAL TTC</div>
-        <div class="h2 font-weight-light">xxxxxxxxxxxxxxx €</div>
-    </div>
-</div>
-        `;
+      <div class="d-flex flex-row-reverse bg-light p-4">
+        <div class="py-3 px-5">
+          <div class="mb-2">TOTAL TTC</div>
+          <div class="h2 font-weight-light">xxxxxxxxxxxxxxx €</div>
+        </div>
+      </div>
+    `;
     }
 }
-export {};

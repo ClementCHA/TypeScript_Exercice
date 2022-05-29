@@ -1,3 +1,4 @@
+import { Datas } from '../classes/Datas.js';
 export class FormInput {
     constructor() {
         //On vient chercher notre form
@@ -26,14 +27,17 @@ export class FormInput {
         e.preventDefault();
         const inputs = this.inputData(); // Sois un array, sois undefined.
         if (Array.isArray(inputs)) {
-            const [type, firstname, lastname, adress, country, town, zip, product, price, quantity, tva] = inputs;
-            console.log(type);
+            const [type, firstName, lastName, adress, country, town, zip, product, price, quantity, tva] = inputs;
+            let docData;
+            let date = new Date();
+            docData = new Datas(type, firstName, lastName, adress, country, town, zip, product, price, quantity, tva, date);
+            console.log(docData.htmlFormat());
         }
     }
     ;
     inputData() {
         const type = this.type.value;
-        const firstname = this.firstName.value;
+        const firstName = this.firstName.value;
         const lastname = this.lastName.value;
         const adress = this.adress.value;
         const country = this.country.value;
@@ -44,7 +48,7 @@ export class FormInput {
         const quantity = this.quantity.valueAsNumber;
         const tva = this.tva.valueAsNumber;
         if (zip > 0 && price > 0 && quantity > 0 && tva > 0) {
-            return [type, firstname, lastname, adress, country, town, zip, product, price, quantity, tva];
+            return [type, firstName, lastname, adress, country, town, zip, product, price, quantity, tva];
         }
         else {
             alert("Les valeurs numérique doivent être supérieur à 0");

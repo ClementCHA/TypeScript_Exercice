@@ -1,1 +1,8 @@
-console.log('Hello Word')
+import { FormInput } from "./classes/FormInputs.js";
+
+new FormInput();
+
+
+
+
+
